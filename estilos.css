@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(92,36,143,1) 0%, rgba(31,30,30,1) 79%);
+}
+/*TODAS LAS CARDS*/
+.container{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   margin: 12rem 15rem;
+}
+
+/*CARD FACHERA-1*/
+.card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background:radial-gradient(circle, rgba(255,23,23,1) 4%, rgba(70,18,18,1) 100%);
+    border-radius: 28px;
+    overflow: hidden;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(180deg, rgba(143,36,36,1) 0%, rgba(31,30,30,1) 79%);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card::after{
+    content: 'SPEED';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: #082428;
+}
+/*IMAGEN DE LA LATA FACHERA*/
+.card .imgBx{
+    display: flex;
+    position: relative;
+    width: 100%;
+    left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    z-index: 10;
+}
+.card .imgBx img{
+    max-width: 140%;
+    transition: 0.5s;
+}
+.card:hover .imgBx img{
+    max-width: 90%;
+}
+/*PRECIO DE LA LATA FACHERA*/
+.card .contentBx{
+    position: relative;
+    padding: 1px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+}
+.card .contentBx h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .contentBx .price{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.card .contentBx .buy{
+    position: relative;
+    top: 180px;
+    opacity: 0;
+    padding: 10px 50px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(255, 0, 0);
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+}
+
+/*CARD FACHERA-2*/
+.card2{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(52,255,23,1) 4%, rgba(23,70,18,1) 100%);
+    border-radius: 28px;
+    overflow: hidden;
+}
+.card2::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(37,143,36,1) 0%, rgba(31,30,30,1) 79%);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card2:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card2::after{
+    content: 'MONSTER';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: #082428;
+}
+/*IMAGEN DE LA LATA FACHERA2*/
+.card2 .imgBx{
+    display: flex;
+    position: relative;
+    width: 77%;
+    left: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    z-index: 10;
+}
+.card2 .imgBx img{
+    max-width: 140%;
+    transition: 0.5s;
+}
+.card2:hover .imgBx img{
+    max-width: 90%;
+}
+/*PRECIO DE LA LATA FACHERA*/
+.card2 .contentBx{
+    position: relative;
+    padding: 1px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+}
+.card2 .contentBx h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card2 .contentBx .price{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.card2 .contentBx .buy{
+    position: relative;
+    top: 180px;
+    opacity: 0;
+    padding: 10px 50px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #2dda2b;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card2:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+}
+/*CARD FACHERA-3*/
+.card3{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(23,57,255,1) 4%, rgba(18,21,70,1) 100%);
+    border-radius: 28px;
+    overflow: hidden;
+}
+.card3::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(39,50,204,1) 0%, rgba(31,30,30,1) 79%);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card3:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+.card3::after{
+    content: 'RED BULL';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: #082428;
+}
+/*IMAGEN DE LA LATA FACHERA3*/
+.card3 .imgBx{
+    display: flex;
+    position: relative;
+    width: 77%;
+    left: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    z-index: 10;
+}
+.card3 .imgBx img{
+    max-width: 140%;
+    transition: 0.5s;
+}
+.card3:hover .imgBx img{
+    max-width: 90%;
+}
+/*PRECIO DE LA LATA FACHERA*/
+.card3 .contentBx{
+    position: relative;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+}
+.card3 .contentBx h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card3 .contentBx .price{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.card3 .contentBx .buy{
+    position: relative;
+    top: 180px;
+    opacity: 0;
+    padding: 10px 50px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: #1739ff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card3:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+}
+/*RESPON*/
+@media screen and (max-width: 1105px){
+    .container{
+        flex-direction: column;
+    }
+}
